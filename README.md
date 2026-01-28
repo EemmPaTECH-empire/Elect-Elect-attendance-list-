@@ -1,41 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UYO EEE Attendance Portal</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <!-- jsPDF for PDF generation in Cloud Functions -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-</head>
-<body>
-  <header>
-    <h1>University of UYO – 100 Level</h1>
-    <h2>Electrical & Electronic Engineering Attendance Portal</h2>
-  </header>
+# 🎥 EemmPaTECH Empire – Interactive Background Video Website
 
-  <main>
-    <div class="attendance-container">
-      <p id="currentLecture"></p>
+Welcome to **EemmPaTECH Empire**, a modern landing page featuring a full-screen background video, interactive play/pause controls, a circular video progress indicator, and a smooth preloader animation.  
 
-      <form id="attendanceForm">
-        <input type="text" id="studentName" placeholder="Full Name" required>
-        <input type="text" id="regNumber" placeholder="Registration Number" required>
-        <button type="submit">Submit Attendance</button>
-      </form>
+This project demonstrates clean HTML, CSS, and vanilla JavaScript for creating an engaging landing page experience.
 
-      <p id="successMessage"></p>
-    </div>
-  </main>
+---
 
-  <footer>
-    © 2026 – A product of EemmPaTECH-EMPIRE
-  </footer>
+## 🚀 Features
 
-  <script src="firebase-config.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+- 🎬 **Fullscreen background video** with autoplay, loop, and muted for seamless playback  
+- ⏯ **Interactive play/pause button** with smooth icon transitions and hover/click effects  
+- 🔄 **Circular video progress indicator** around the button showing playback progress  
+- ⏳ **Professional preloader** with fade, shrink, and spinning animation before page load  
+- 🌙 **Darkened video overlay** for better text visibility  
+- 📱 **Responsive design**, optimized for desktop and mobile
+
+---
+
+## 🛠 Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
+- **Bootstrap 5**
+- **Font Awesome Icons**
+
+---
+
+## 📁 Project Structure
