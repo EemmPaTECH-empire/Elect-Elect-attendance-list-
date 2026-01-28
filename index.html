@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UYO EEE Attendance Portal</title>
+  <title>EemmPaTECH Empire</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <!-- jsPDF for PDF generation in Cloud Functions -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
+
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="preloader.gif" alt="Loading..." />
+  </div>
+
   <header>
-    <h1>University of UYO – 100 Level</h1>
-    <h2>Electrical & Electronic Engineering Attendance Portal</h2>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop src="background-video.mp4"></video>
+
+    <h1>EemmPaTECH Empire</h1>
+
+    <!-- Button with circular progress -->
+    <div class="btn-wrapper">
+      <svg class="progress-ring" width="80" height="80">
+        <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="36" cx="40" cy="40"/>
+      </svg>
+      <button class="btn btn-secondary">
+        <i class="fa-solid fa-pause"></i>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <div class="attendance-container">
-      <p id="currentLecture"></p>
-
-      <form id="attendanceForm">
-        <input type="text" id="studentName" placeholder="Full Name" required>
-        <input type="text" id="regNumber" placeholder="Registration Number" required>
-        <button type="submit">Submit Attendance</button>
-      </form>
-
-      <p id="successMessage"></p>
-    </div>
-  </main>
-
-  <footer>
-    © 2026 – A product of EemmPaTECH-EMPIRE
-  </footer>
-
-  <script src="firebase-config.js"></script>
-  <script src="script.js"></script>
+  <!-- JS -->
+  <script src="index.js"></script>
 </body>
+
 </html>
